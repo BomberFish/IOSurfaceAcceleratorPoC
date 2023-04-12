@@ -11,7 +11,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Button("Don't panic", action: {trigger_memmove_oob_copy()})
+                Button(action: {trigger_memmove_oob_copy()}, label: {
+                    Text("Don't panic")
+                        .padding
+                })
                     .tint(.red)
                     .buttonStyle(.bordered)
             }
