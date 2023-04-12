@@ -14,6 +14,7 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Button("panic", action: {trigger_memmove_oob_copy()})
         }
         .padding()
     }

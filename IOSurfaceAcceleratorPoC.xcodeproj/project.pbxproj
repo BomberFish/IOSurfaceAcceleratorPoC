@@ -14,6 +14,11 @@
 		D688300E29E712E300F4D7DA /* IOSurfaceAcceleratorPoCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688300D29E712E300F4D7DA /* IOSurfaceAcceleratorPoCTests.swift */; };
 		D688301829E712E300F4D7DA /* IOSurfaceAcceleratorPoCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688301729E712E300F4D7DA /* IOSurfaceAcceleratorPoCUITests.swift */; };
 		D688301A29E712E300F4D7DA /* IOSurfaceAcceleratorPoCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688301929E712E300F4D7DA /* IOSurfaceAcceleratorPoCUITestsLaunchTests.swift */; };
+		D688302929E7138800F4D7DA /* PoC.m in Sources */ = {isa = PBXBuildFile; fileRef = D688302829E7138800F4D7DA /* PoC.m */; };
+		D688302D29E71B2300F4D7DA /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D688302C29E71B2300F4D7DA /* IOKit.framework */; };
+		D688303029E71B2C00F4D7DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D688302E29E71B2B00F4D7DA /* Foundation.framework */; };
+		D688303129E71B2C00F4D7DA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D688302F29E71B2B00F4D7DA /* CoreFoundation.framework */; };
+		D688303329E71B3B00F4D7DA /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D688303229E71B3A00F4D7DA /* IOSurface.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,13 @@
 		D688301329E712E300F4D7DA /* IOSurfaceAcceleratorPoCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSurfaceAcceleratorPoCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D688301729E712E300F4D7DA /* IOSurfaceAcceleratorPoCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSurfaceAcceleratorPoCUITests.swift; sourceTree = "<group>"; };
 		D688301929E712E300F4D7DA /* IOSurfaceAcceleratorPoCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSurfaceAcceleratorPoCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D688302629E7137200F4D7DA /* IOSurfaceAcceleratorPoC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOSurfaceAcceleratorPoC-Bridging-Header.h"; sourceTree = "<group>"; };
+		D688302829E7138800F4D7DA /* PoC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoC.m; sourceTree = "<group>"; };
+		D688302A29E713A000F4D7DA /* PoC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoC.h; sourceTree = "<group>"; };
+		D688302C29E71B2300F4D7DA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		D688302E29E71B2B00F4D7DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D688302F29E71B2B00F4D7DA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D688303229E71B3A00F4D7DA /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D688303329E71B3B00F4D7DA /* IOSurface.framework in Frameworks */,
+				D688302D29E71B2300F4D7DA /* IOKit.framework in Frameworks */,
+				D688303029E71B2C00F4D7DA /* Foundation.framework in Frameworks */,
+				D688303129E71B2C00F4D7DA /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +94,7 @@
 				D688300C29E712E300F4D7DA /* IOSurfaceAcceleratorPoCTests */,
 				D688301629E712E300F4D7DA /* IOSurfaceAcceleratorPoCUITests */,
 				D6882FFA29E712DB00F4D7DA /* Products */,
+				D688302B29E71B2200F4D7DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +114,10 @@
 				D6882FFC29E712DB00F4D7DA /* IOSurfaceAcceleratorPoCApp.swift */,
 				D6882FFE29E712DB00F4D7DA /* ContentView.swift */,
 				D688300029E712E100F4D7DA /* Assets.xcassets */,
+				D688302829E7138800F4D7DA /* PoC.m */,
+				D688302A29E713A000F4D7DA /* PoC.h */,
 				D688300229E712E100F4D7DA /* Preview Content */,
+				D688302629E7137200F4D7DA /* IOSurfaceAcceleratorPoC-Bridging-Header.h */,
 			);
 			path = IOSurfaceAcceleratorPoC;
 			sourceTree = "<group>";
@@ -125,6 +145,17 @@
 				D688301929E712E300F4D7DA /* IOSurfaceAcceleratorPoCUITestsLaunchTests.swift */,
 			);
 			path = IOSurfaceAcceleratorPoCUITests;
+			sourceTree = "<group>";
+		};
+		D688302B29E71B2200F4D7DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D688303229E71B3A00F4D7DA /* IOSurface.framework */,
+				D688302F29E71B2B00F4D7DA /* CoreFoundation.framework */,
+				D688302E29E71B2B00F4D7DA /* Foundation.framework */,
+				D688302C29E71B2300F4D7DA /* IOKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +226,7 @@
 				TargetAttributes = {
 					D6882FF829E712DB00F4D7DA = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 					D688300829E712E300F4D7DA = {
 						CreatedOnToolsVersion = 14.3;
@@ -257,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D688302929E7138800F4D7DA /* PoC.m in Sources */,
 				D6882FFF29E712DB00F4D7DA /* ContentView.swift in Sources */,
 				D6882FFD29E712DB00F4D7DA /* IOSurfaceAcceleratorPoCApp.swift in Sources */,
 			);
@@ -412,8 +445,13 @@
 		D688301E29E712E300F4D7DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64e,
+					arm64,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IOSurfaceAcceleratorPoC/Preview Content\"";
@@ -424,6 +462,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,6 +471,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bomberfish.IOSurfaceAcceleratorPoC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "IOSurfaceAcceleratorPoC/IOSurfaceAcceleratorPoC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,8 +481,13 @@
 		D688301F29E712E300F4D7DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64e,
+					arm64,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IOSurfaceAcceleratorPoC/Preview Content\"";
@@ -452,6 +498,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +507,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bomberfish.IOSurfaceAcceleratorPoC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "IOSurfaceAcceleratorPoC/IOSurfaceAcceleratorPoC-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
