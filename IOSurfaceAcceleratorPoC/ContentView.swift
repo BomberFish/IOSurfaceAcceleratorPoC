@@ -13,7 +13,7 @@ struct ContentView: View {
             VStack {
                 Button(action: {trigger_memmove_oob_copy()}, label: {
                     Text("Don't panic")
-                        .padding
+                        .padding()
                 })
                     .tint(.red)
                     .buttonStyle(.bordered)
